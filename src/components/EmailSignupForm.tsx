@@ -52,7 +52,7 @@ export const EmailSignupForm: React.FC<EmailSignupFormProps> = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-3 ${className}`}>
+    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-3 w-full ${className}`}>
       <Input
         type="email"
         value={email}
@@ -65,7 +65,7 @@ export const EmailSignupForm: React.FC<EmailSignupFormProps> = ({
       <Button 
         type="submit"
         disabled={isSubmitting}
-        className="bg-sage-blue-700 hover:bg-sage-blue-800 text-white px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+        className="bg-sage-blue-700 hover:bg-sage-blue-800 text-white px-4 sm:px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
       >
         {isSubmitting ? (
           <span className="flex items-center justify-center">

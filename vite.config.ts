@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // Определяем базовый путь для GitHub Pages
-const base = process.env.NODE_ENV === 'production' ? '/lean-scale-today/' : '/';
+const base = process.env.NODE_ENV === 'production' ? '/lean-scale-today' : '/';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({

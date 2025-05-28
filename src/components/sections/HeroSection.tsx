@@ -30,12 +30,12 @@ export const HeroSection = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
         {/* Content */}
         <div className="text-center lg:text-left space-y-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-sage-blue-800 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-sage-blue-800 leading-tight">
             Build lean. Move fast.{' '}
             <span className="text-sage-blue-600">Scale relentlessly today.</span>
           </h1>
           
-          <h2 className="text-lg sm:text-xl lg:text-2xl text-gray-600 font-medium">
+          <h2 className="text-base sm:text-lg lg:text-xl text-gray-600 font-medium">
             We take care of operations, you take care of business.
           </h2>
           
@@ -60,7 +60,7 @@ export const HeroSection = () => {
                   <h3 className="text-lg font-semibold text-sage-blue-800 mb-2">Growth vs Time Optimization</h3>
                 </div>
 
-                <ChartContainer config={chartConfig} className="h-64 w-full">
+                <ChartContainer config={chartConfig} className="h-48 sm:h-56 md:h-64 w-full">
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={chartData}>
                       <XAxis 
@@ -95,7 +95,7 @@ export const HeroSection = () => {
                   </ResponsiveContainer>
                 </ChartContainer>
 
-                <div className="flex flex-col sm:flex-row justify-center sm:space-x-6 space-y-2 sm:space-y-0 text-xs sm:text-sm">
+                <div className="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-1 sm:space-y-0 text-xs">
                   <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 bg-sage-blue-600 rounded-full"></div>
                     <span className="text-gray-600">Company Growth</span>

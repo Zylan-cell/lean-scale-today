@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Sage - Build lean. Move fast. Scale relentlessly today.</title>
     <meta name="description" content="We take care of operations, you take care of business. Join the early access list and get your time back with autonomous execution." />
     <meta name="author" content="Sage" />
@@ -18,6 +18,22 @@
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    
+    <style>
+      html {
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      body {
+        touch-action: manipulation;
+        -webkit-touch-callout: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      input, button, textarea, select {
+        font-size: 16px; /* Предотвращает автоматическое масштабирование при фокусе на iOS */
+      }
+    </style>
   </head>
 
   <body>
